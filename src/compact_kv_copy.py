@@ -1,6 +1,3 @@
-from typing import Any, Dict, Tuple
-
-import tvm
 from tvm.script import tir as T
 from tvm.target import Target
 

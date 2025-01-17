@@ -1,11 +1,6 @@
-from typing import Any, Dict, Tuple
-import tvm
 from tvm.script import tir as T
 from tvm.target import Target
-
-
-def _var_cpu(dtype):
-    return T.alloc_buffer((1,), dtype)
+from .utils import _var_cpu
 
 def _merge_state_inplace_cpu(num_heads, head_dim, v_dtype, target: Target):
 

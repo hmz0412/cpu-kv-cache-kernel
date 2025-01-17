@@ -1,3 +1,5 @@
 from .compact_kv_copy_test import Compact_KV_Copy_kernel
 from .copy_single_page_test import Copy_Single_Page_kernel
 from .merge_state_inplace_test import Merge_State_Inplace_kernel
+from .attention_prefill import Attention_Prefill_kernel
+from .tree_attn_paged_kv import Tree_Attn_Paged_KV_kernel
