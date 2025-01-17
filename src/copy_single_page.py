@@ -1,14 +1,4 @@
-import enum
-import math
-from typing import Any, Dict, Tuple
-
-import tvm
-from tvm import relax as rx
-from tvm import tir
-from tvm.relax.frontend.nn import Object, Tensor
-from tvm.runtime import DataType
 from tvm.script import tir as T
-from tvm.script import ir as I
 from tvm.target import Target
 
 

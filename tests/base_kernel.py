@@ -24,7 +24,7 @@ class BaseKernel(ABC):
         for t in TEST:
             try:
                 np.testing.assert_almost_equal(self.inputs_cpu[t].numpy(), self.inputs_gpu[t].numpy(), decimal=5)
-                print(t," : passed")
+                print(t,": passed")
             except:
                 print(t,": failed")
         print("Done")

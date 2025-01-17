@@ -2,10 +2,7 @@ import tvm
 import numpy as np 
 import random
 from .base_kernel import BaseKernel
-
-def get_indptr(max, batch):
-    t = np.sort(np.random.choice(range(max), size=batch, replace=False)).astype("int32")
-    return np.append(t,[max]).astype("int32")
+from .utils import get_indptr
 
 class Copy_Single_Page_kernel(BaseKernel):
 
